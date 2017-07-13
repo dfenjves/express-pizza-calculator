@@ -5,16 +5,25 @@
     </head>
     <body>
         <div class="container">
-            <h1>Pizza Calculator</h1>
-            
+            <div class="row">
+                <h1>Pizza Calculator</h1>
+            </div>
             <form method="POST" action "/">
-                <input type="number" id="students" name="students"/>
-                <label for="students">Number of Students</label>
-                  <input type="range" name="hungerlevel" id="hungerlevel" min="0" max="5" />
-                <label for="hungerlevel">Hunger Level</label>
-                <br>
-                <button type="submit" class="btn btn-submit">Submit</button>
+                <div class="row">
+                    <div class="col s6">
+                        <input type="number" id="students" name="students"/>
+                        <label for="students">Number of Students</label>
+                    </div>
+                    <div class="col s6">
+                        <input type="range" name="hungerlevel" id="hungerlevel" min="0" max="5" />
+                        <label for="hungerlevel">Hunger Level</label>
+                    </div>
+                </div>
+                <div class="row center">
+                    <button type="submit" class="btn btn-submit">How Much Pizza?</button>
+                </div>
             </form>
+            
             
         </div>
 
