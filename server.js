@@ -44,7 +44,7 @@ app.post("/", (request,response) => {
 //     res.send('<h1>another</h1>')
 // })
 
-var port = process.env.port || 3000
+var port = process.env.port
 
 app.listen(port, function(){
     console.log("app running at port " + port)
