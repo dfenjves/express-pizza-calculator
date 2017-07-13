@@ -40,13 +40,12 @@ app.post("/", (request,response) => {
     response.render('results.ejs', {pizzas: pizzas})
 })
 
-app.get("/more", (req, res) => {
-    res.send('<h1>another</h1>')
-})
+// app.get("/more", (req, res) => {
+//     res.send('<h1>another</h1>')
+// })
 
 var port = process.env.port || 8080
 
 app.listen(port, function(){
-
-    
+    console.log("app running at port " + port)
 })
